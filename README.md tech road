@@ -1,4 +1,24 @@
-# Data-City-
-3D visualization of game industry market data ( AR 
+# AR Data City: An Immersive Platform for Spatio-Temporal Visualization of Complex Market Dynamics
+
+**AR Data City is an interactive 3D/AR data visualization platform that transmutes complex, high-dimensional time-series data from the game industry into an immersive, navigable virtual cityscape for advanced analytics and insight discovery.**
 
 
+## Core Concept: Beyond Dashboards, Towards "Embodied" Data Cognition
+
+Traditional analysis of market dynamics relies on 2D dashboards and spreadsheets. While effective, these paradigms lack the intuitive and narrative power required to holistically grasp complex, interrelated phenomena. **AR Data City** is conceived to transcend these limitations by leveraging spatial representation as a primary tool for data cognition. The core thesis is that by "walking through" a physicalized representation of data, analysts can more intuitively perceive trends, identify anomalies, and understand causal relationships over time.
+
+This project is an exploration in the intersection of Human-Computer Interaction (HCI), Data Visualization, and Machine Learning, aiming to create novel paradigms for interacting with and understanding complex, longitudinal datasets.
+
+## Key Features
+
+🔌 Heterogeneous Data Fusion Pipeline**: Implements a robust data engineering pipeline to ingest, clean, and integrate time-series data from disparate, public sources. This includes concurrent user metrics (CCU) from Steam, concurrent viewership data (CCV) from Twitch as a proxy for market attention, and application rankings as a proxy for revenue potential. This process creates a comprehensive and reproducible data foundation.
+🏙️ Dynamic Spatial Layouts**: The system maps abstract data entities to a dynamic urban landscape. The world can be procedurally reconfigured to represent different analytical perspectives, such as a "Studio View" (where districts represent publishers) or a "Genre View" (where districts represent game genres), facilitating multi-faceted trend analysis.
+🎨 Real-Time Visual Encoding**: Every visual attribute within the cityscape is algorithmically bound to a core data metric. The **height** of a structure represents its stable user base (e.g., 7-day median CCU), a **luminescent halo** highlights recent peak performance (PCCU), while ambient **particle systems** around a structure visualize its real-time community engagement (Twitch CCV).
+⏳ Spatio-Temporal Replay System**: A core feature is an interactive temporal control mechanism, allowing users to scrub through time. This transforms the static city into a dynamic animation, enabling the direct observation of how key events (e.g., software patches, marketing campaigns) propagate through and impact the entire market ecosystem.
+🧠 AI-Powered Insight Engine (Prism-Analyzer)**: An integrated multi-modal analysis module (**currently in development**) that applies Natural Language Processing (NLP) to extract sentiment scores from unstructured community reviews. This introduces a qualitative, sentiment-based data layer, allowing the city to visualize not just *what* is happening, but *how the community feels* about it.
+
+## Technology Stack
+Immersive Frontend**: `Unity` `C#` `AR Foundation` `XR Interaction Toolkit`
+Backend & Data Pipeline**: `Python` `FastAPI` `PostgreSQL` `Redis` `Docker`
+AI / Machine Learning**: `Hugging Face Transformers` `OpenCV` `Pandas`
+Data Ingestion**: `Requests` `BeautifulSoup`
